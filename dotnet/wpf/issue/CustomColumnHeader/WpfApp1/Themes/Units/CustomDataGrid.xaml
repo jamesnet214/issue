@@ -39,7 +39,7 @@
 
     <Style TargetType="{x:Type units:CustomDataGrid}"
            BasedOn="{StaticResource {x:Type DataGrid}}">
-        <Setter Property="ColumnHeaderStyle" Value="{StaticResource ColumnHeader2}"/>
+        <Setter Property="ColumnHeaderStyle" Value="{StaticResource ColumnHeader1}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:CustomDataGrid}">
