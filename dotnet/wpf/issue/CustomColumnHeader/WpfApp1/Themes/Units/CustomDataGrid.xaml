@@ -12,7 +12,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <Grid>
-                            <TextBlock Text="111111111"/>
+                            <TextBlock Text="aaaaaaaaa"/>
                         </Grid>
                     </Border>
                 </ControlTemplate>
@@ -20,26 +20,13 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type DataGridColumnHeader}"
+    <Style TargetType="{x:Type units:CustomDataGridColumnHeadersPresenter}"
+           BasedOn="{StaticResource {x:Type DataGridColumnHeadersPresenter}}"
            x:Key="ColumnHeader2">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type DataGridColumnHeader}">
-                    <Border Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}">
-                        <Grid>
-                            <TextBlock Text="111111111"/>
-                        </Grid>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
     </Style>
 
     <Style TargetType="{x:Type units:CustomDataGrid}"
            BasedOn="{StaticResource {x:Type DataGrid}}">
-        <Setter Property="ColumnHeaderStyle" Value="{StaticResource ColumnHeader1}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:CustomDataGrid}">
@@ -51,8 +38,8 @@
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <DataGridColumnHeadersPresenter Grid.Row="0"/>
-                            <ItemsPresenter Grid.Row="1"/>
+                            <units:CustomDataGridColumnHeadersPresenter Grid.Row="0"/>
+                            <ItemsPresenter Grid.Row="1" />
                         </Grid>
                     </Border>
                 </ControlTemplate>

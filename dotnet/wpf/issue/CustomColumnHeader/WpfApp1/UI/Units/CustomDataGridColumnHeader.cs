@@ -14,5 +14,10 @@ namespace WpfApp1.UI.Units
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(CustomDataGridColumnHeader), new FrameworkPropertyMetadata(typeof(CustomDataGridColumnHeader)));
         }
+
+        public CustomDataGridColumnHeader()
+        { 
+        
+        }
     }
 }
