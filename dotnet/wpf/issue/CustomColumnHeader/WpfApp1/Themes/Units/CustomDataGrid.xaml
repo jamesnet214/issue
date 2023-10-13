@@ -3,8 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:units="clr-namespace:WpfApp1.UI.Units">
 
-    <Style TargetType="{x:Type units:CustomDataGridColumnHeader}"
-           x:Key="ColumnHeader1">
+    <Style TargetType="{x:Type units:CustomDataGridColumnHeader}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:CustomDataGridColumnHeader}">
@@ -21,8 +20,7 @@
     </Style>
 
     <Style TargetType="{x:Type units:CustomDataGridColumnHeadersPresenter}"
-           BasedOn="{StaticResource {x:Type DataGridColumnHeadersPresenter}}"
-           x:Key="ColumnHeader2">
+           BasedOn="{StaticResource {x:Type DataGridColumnHeadersPresenter}}">
     </Style>
 
     <Style TargetType="{x:Type units:CustomDataGrid}"
