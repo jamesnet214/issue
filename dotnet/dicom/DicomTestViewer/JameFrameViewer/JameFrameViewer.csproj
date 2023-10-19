@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CA5E53D-52FB-4F56-B1D2-7B915812D347}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JameFrameViewer</RootNamespace>
+    <AssemblyName>JameFrameViewer</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dicom.Core, Version=4.0.8.0, Culture=neutral, PublicKeyToken=3a13f649e28eb09a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Dicom.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Data\samples2\Sample1.dcm" />
+    <None Include="Data\samples2\sample2.dcm" />
+    <None Include="Data\samples\10200904.dcm" />
+    <None Include="Data\samples\chrArab.dcm" />
+    <None Include="Data\samples\chrFren.dcm" />
+    <None Include="Data\samples\chrGerm.dcm" />
+    <None Include="Data\samples\chrGreek.dcm" />
+    <None Include="Data\samples\chrH31.dcm" />
+    <None Include="Data\samples\chrH32.dcm" />
+    <None Include="Data\samples\chrHbrw.dcm" />
+    <None Include="Data\samples\chrI2.dcm" />
+    <None Include="Data\samples\chrJapMulti.dcm" />
+    <None Include="Data\samples\chrJapMultiExplicitIR6.dcm" />
+    <None Include="Data\samples\chrKoreanMulti.dcm" />
+    <None Include="Data\samples\chrRuss.dcm" />
+    <None Include="Data\samples\chrSQEncoding.dcm" />
+    <None Include="Data\samples\chrSQEncoding1.dcm" />
+    <None Include="Data\samples\chrX1.dcm" />
+    <None Include="Data\samples\chrX2.dcm" />
+    <None Include="Data\samples\CR-ModalitySequenceLUT.dcm" />
+    <None Include="Data\samples\ct.dcm" />
+    <None Include="Data\samples\Deflated.dcm" />
+    <None Include="Data\samples\D_CLUNIE_CT1_RLE_FRAGS.dcm" />
+    <None Include="Data\samples\ETIAM_video_002.dcm" />
+    <None Include="Data\samples\FreezePattern.dcm" />
+    <None Include="Data\samples\genFile.dcm" />
+    <None Include="Data\samples\GH064.dcm" />
+    <None Include="Data\samples\GH1049_planar_0.dcm" />
+    <None Include="Data\samples\GH1049_planar_1.dcm" />
+    <None Include="Data\samples\GH1146.dcm" />
+    <None Include="Data\samples\GH1261.dcm" />
+    <None Include="Data\samples\GH1301.dcm" />
+    <None Include="Data\samples\GH1308.dcm" />
+    <None Include="Data\samples\GH133.dcm" />
+    <None Include="Data\samples\GH1376.dcm" />
+    <None Include="Data\samples\GH1442.dcm" />
+    <None Include="Data\samples\GH177_D_CLUNIE_CT1_IVRLE_BigEndian_ELE_undefinded_length.dcm" />
+    <None Include="Data\samples\GH177_D_CLUNIE_CT1_IVRLE_BigEndian_undefined_length.dcm" />
+    <None Include="Data\samples\GH178.dcm" />
+    <None Include="Data\samples\GH179A.dcm" />
+    <None Include="Data\samples\GH179B.dcm" />
+    <None Include="Data\samples\GH184.dcm" />
+    <None Include="Data\samples\GH195.dcm" />
+    <None Include="Data\samples\GH220.dcm" />
+    <None Include="Data\samples\GH223.dcm" />
+    <None Include="Data\samples\GH227.dcm" />
+    <None Include="Data\samples\GH340.dcm" />
+    <None Include="Data\samples\GH342.dcm" />
+    <None Include="Data\samples\GH355.dcm" />
+    <None Include="Data\samples\GH364.dcm" />
+    <None Include="Data\samples\GH487.dcm" />
+    <None Include="Data\samples\GH538-jpeg1.dcm" />
+    <None Include="Data\samples\GH538-jpeg14sv1.dcm" />
+    <None Include="Data\samples\GH610.dcm" />
+    <None Include="Data\samples\GH626.dcm" />
+    <None Include="Data\samples\GH645.dcm" />
+    <None Include="Data\samples\HasFragmentSequence.dcm" />
+    <None Include="Data\samples\IM-0001-0001-0001.dcm" />
+    <None Include="Data\samples\Issue1097_FailToOpenDeflatedFileWithSQ.dcm" />
+    <None Include="Data\samples\JPEGwithIcon.dcm" />
+    <None Include="Data\samples\MG.dcm" />
+    <None Include="Data\samples\mr.dcm" />
+    <None Include="Data\samples\multiframe.dcm" />
+    <None Include="Data\samples\OutOfBoundsOverlay.dcm" />
+    <None Include="Data\samples\RI6XDosiGap.dcm" />
+    <None Include="Data\samples\TestPattern_Palette.dcm" />
+    <None Include="Data\samples\TestPattern_Palette_16.dcm" />
+    <None Include="Data\samples\TestPattern_RGB.dcm" />
+    <None Include="Data\samples\test_720.dcm" />
+    <None Include="Data\samples\test_SR.dcm" />
+    <None Include="Data\studylist\A2C\1.dcm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\studylist\A2C\2.dcm" />
+    <None Include="Data\studylist\A3C\1.dcm" />
+    <None Include="Data\studylist\A3C\2.dcm" />
+    <None Include="Data\studylist\A4C\1.dcm" />
+    <None Include="Data\studylist\A4C\2.dcm" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\studylist\A4C\14444630_20150205%2822%29.png" />
+    <Resource Include="Data\studylist\A4C\14444630_20150205%2821%29.png" />
+    <Resource Include="Data\studylist\A4C\1.dcm.png" />
+    <Resource Include="Data\studylist\A3C\14444630_20150205%2831%29.png" />
+    <Resource Include="Data\studylist\A3C\14444630_20150205%2830%29.png" />
+    <Resource Include="Data\studylist\A2C\14444630_20150205%2829%29.png" />
+    <Resource Include="Data\studylist\A2C\14444630_20150205%2828%29.png" />
+    <Content Include="Dicom.Core.dll" />
+    <Content Include="Dicom.Native64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{70DF5484-F932-4BFA-ACC2-1C0759B53029}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
