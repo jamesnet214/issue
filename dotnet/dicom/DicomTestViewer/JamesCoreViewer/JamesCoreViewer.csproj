@@ -12,11 +12,6 @@
   <ItemGroup>
     <None Remove="Data\studylist\A2C\14444630_20150205(28).png" />
     <None Remove="Data\studylist\A2C\14444630_20150205(29).png" />
-    <None Remove="Data\studylist\A3C\14444630_20150205(30).png" />
-    <None Remove="Data\studylist\A3C\14444630_20150205(31).png" />
-    <None Remove="Data\studylist\A4C\1.dcm.png" />
-    <None Remove="Data\studylist\A4C\14444630_20150205(21).png" />
-    <None Remove="Data\studylist\A4C\14444630_20150205(22).png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,11 +24,6 @@
   <ItemGroup>
     <Resource Include="Data\studylist\A2C\14444630_20150205(28).png" />
     <Resource Include="Data\studylist\A2C\14444630_20150205(29).png" />
-    <Resource Include="Data\studylist\A3C\14444630_20150205(30).png" />
-    <Resource Include="Data\studylist\A3C\14444630_20150205(31).png" />
-    <Resource Include="Data\studylist\A4C\1.dcm.png" />
-    <Resource Include="Data\studylist\A4C\14444630_20150205(21).png" />
-    <Resource Include="Data\studylist\A4C\14444630_20150205(22).png" />
   </ItemGroup>
 
   <ItemGroup>
